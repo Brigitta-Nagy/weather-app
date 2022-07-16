@@ -5,12 +5,15 @@
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100vh;
   background-image: linear-gradient(whitesmoke, rgb(184, 146, 175));
+  letter-spacing: 0.08em;
+  line-height: 1.8;
 }
 
 main{
@@ -20,7 +23,7 @@ main{
   justify-content: center;
   align-items: center;
   background-color: rgb(184, 146, 175);
-  width: 80%;
+  width: 90%;
   height: auto;
   color: white;
   border-radius: 15px;
@@ -33,23 +36,46 @@ main{
   margin: 15px;
   padding: 5px;
   box-shadow:  rgb(138, 110, 131) 0px 25px 50px -12px; 
+  width: auto;
 }
 
 .input-field{
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 5px;
   height: 30px;
+  width: auto;
   background-color: whitesmoke;
 
 }
+
 button {
   background-color: rgb(184, 146, 175);
   color: white;
-  padding: 3px;
+  padding: 5px;
+  margin: 3px;
   border-radius: 10px;
-
+  border: none;
 }
+
 .fa-magnifying-glass{
   color: rgb(184, 146, 175);
+}
+
+.date{
+  font-size: 30px;
+}
+
+.weather-info{
+    padding: 25px;
+}
+/* .degree-btn{
+  display: none; 
+ 
+} */
+#btn{
+  border: 1px solid white;
+}
+.temp{
+  display: flex;
 }

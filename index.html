@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b142fb34af.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="./style.css">
@@ -17,17 +20,21 @@
       <button type="button" id="button">Search</button>
     </div>
 
-    <section class="weather-data">
-      <h1>Weather in</h1>
-
-      <p>time</p>
-      <!-- jquery create description -->
-      <h2>degree</h2>
-      <!-- toggle on it -->
+    <section class="weather-info">
+        <h1 class="date"></h1>
+        <h2 id="city-name"></h2>
+      <div class="temp">
+        <h3 id="temp-f"></h3>
+        <h3 id="temp-c"></h3>
+        <button type="button" class="degree-btn" id="btn"><span>&#8457;</span>/ <span>&#8451;</span></button>
+      </div>
+        <p id="desc"></p>
+        <p id="wind"></p>
       
     </section>
-    <img src="#" width="200px" alt="">
-
+    <section>
+      <img id="gif" src="#" width="200px" alt="">
+    </section>
   </main>
   
 
