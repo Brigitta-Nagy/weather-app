@@ -1,0 +1,55 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(whitesmoke, rgb(184, 146, 175));
+}
+
+main{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(184, 146, 175);
+  width: 80%;
+  height: auto;
+  color: white;
+  border-radius: 15px;
+  box-shadow:  rgb(138, 110, 131) 0px 25px 50px -12px;
+}
+
+.search{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 5px;
+  box-shadow:  rgb(138, 110, 131) 0px 25px 50px -12px; 
+}
+
+.input-field{
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  height: 30px;
+  background-color: whitesmoke;
+
+}
+button {
+  background-color: rgb(184, 146, 175);
+  color: white;
+  padding: 3px;
+  border-radius: 10px;
+
+}
+.fa-magnifying-glass{
+  color: rgb(184, 146, 175);
+}
