@@ -11,7 +11,9 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(whitesmoke, rgb(184, 146, 175));
+  background-image: url("./assets/background-img.jpg");
+  background-size: cover;
+  background-position: center;
   letter-spacing: 0.08em;
   line-height: 1.8;
 }
@@ -22,12 +24,12 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(184, 146, 175);
-  width: 90%;
+  background-color: rgba(231, 225, 230, 0.65);
+  width: 60%;
   height: auto;
   color: white;
   border-radius: 15px;
-  box-shadow:  rgb(138, 110, 131) 0px 25px 50px -12px;
+  box-shadow:  rgb(184, 159, 177) 0px 25px 50px -12px;
 }
 
 .search{
@@ -46,6 +48,7 @@ main{
   height: 30px;
   width: auto;
   background-color: whitesmoke;
+  font-size: 20px;
 
 }
 
@@ -67,15 +70,40 @@ button {
 }
 
 .weather-info{
+  font-size: 20px;
+  font-weight: 600;
+  color: whitesmoke;
+ text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+   
     padding: 25px;
 }
-/* .degree-btn{
+ .degree-btn{
   display: none; 
  
-} */
+} 
 #btn{
   border: 1px solid white;
 }
 .temp{
+  margin: 8px 23px;
+  display: flex;
+}
+
+.errorMessage{
+  width: 300px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  background-color: brown;
+  border-radius: 15px;
+  padding: 20px;
+  display: none;
+}
+.closeMessage {
+  position: relative; 
+  top: -70px;
+  left: 250px;
+}
+.city-temp {
   display: flex;
 }
