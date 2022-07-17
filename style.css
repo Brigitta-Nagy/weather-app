@@ -82,6 +82,7 @@ button {
  
 } 
 #btn{
+  display: none;
   border: 1px solid white;
 }
 .temp{

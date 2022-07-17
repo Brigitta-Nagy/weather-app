@@ -18,7 +18,7 @@ $(document).ready(function(){
               let newDesc = data.weather[0]["description"];
               let wind = data.wind.speed;
               let tempCelsius = Math.round(temp -32 *1.8);
-              //let icon = data.weather[0].icon;
+              
 
               $('#city-name').html(`<p> ${newCity} </p>`);
               $('#temp-f').html(`<p> ${temp} &deg;F</p>`)
@@ -26,7 +26,7 @@ $(document).ready(function(){
               $('#desc').html(newDesc);
               $('#wind').html(`<p>Wind: ${wind} miles/h</p>`);
                     
-
+              $('#btn').show()
           
 
 
@@ -35,7 +35,7 @@ $(document).ready(function(){
                   $("body").css({'backgroundImage':'url("./assets/clouds.jpg'}) 
                 break;
                 case newDesc.includes("clear sky"):
-                   $("body").css({'backgroundImage':'url("./assets/clear-sky2.jpg'}) 
+                   $("body").css({'backgroundImage':'url("./assets/clear-sky3.jpg'}) 
                 break;
                 case newDesc.includes("mist"):
                   $("body").css({'backgroundImage':'url("./assets/mist.jpg'}) 
@@ -55,17 +55,18 @@ $(document).ready(function(){
               }
 
 
-              
+              $('#btn').click(function(){
+                $('#temp-f').toggleClass('degree-btn')
+                $('#temp-c').toggleClass('degree-btn')
+              })
   
+
                 $("input").val("")
                 $("cityName").val("")
                 $("input").attr("placeholder", newCity)
  
 })
-          $('#btn').click(function(){
-            $('#temp-f').toggleClass('degree-btn')
-            $('#temp-c').toggleClass('degree-btn')
-          })
+        
 })
 })
 
