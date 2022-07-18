@@ -55,11 +55,7 @@ $(document).ready(function(){
               }
 
 
-              $('#btn').click(function(){
-                $('#temp-f').toggleClass('degree-btn')
-                $('#temp-c').toggleClass('degree-btn')
-              })
-  
+              
 
                 $("input").val("")
                 $("cityName").val("")
@@ -68,6 +64,11 @@ $(document).ready(function(){
 })
         
 })
+$('#btn').click(function(){
+  $('#temp-f').toggleClass('degree-btn')
+  $('#temp-c').toggleClass('degree-btn')
+})
+
 })
 
 
