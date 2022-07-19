@@ -46,7 +46,7 @@ main{
   border: none;
   outline: none;
   border-radius: 5px;
-  /* height: 30%; */
+  padding: 5px;
   width: auto;
   background-color: whitesmoke;
   font-size: 15px;

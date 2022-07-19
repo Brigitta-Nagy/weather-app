@@ -17,7 +17,7 @@ $(document).ready(function(){
               let temp = Math.round(data.main.temp);
               let newDesc = data.weather[0]["description"];
               let wind = data.wind.speed;
-              let tempCelsius = Math.round(temp -32 *1.8);
+              let tempCelsius = Math.round((temp -32 )/1.8);
               
 
               $('#city-name').html(`<p> ${newCity} </p>`);
