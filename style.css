@@ -107,6 +107,7 @@ button {
   position: relative; 
   top: -70px;
   left: 250px;
+  cursor: pointer;
 }
 .city-temp {
   display: flex;

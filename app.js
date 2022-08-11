@@ -7,7 +7,7 @@ $(document).ready(function(){
         .then((response) => response.json())
         .then(function (data){
            
-            console.log(data);
+            //console.log(data);
 
             if(data.cod == '404') {
               $('.errorMessage').show();
